@@ -1,0 +1,149 @@
+:root {
+    --primary-color: rgb(255, 95, 95); 
+    --secondary-color: rgb(2, 202, 185); 
+    --secondary-lighter-color: rgba(2, 202, 185, .6); 
+    --secondary-lightest-color: rgba(2, 202, 185, .3); 
+    --dark-text: #767676; 
+    --light-text: #d2d2d2;
+    --bigbanner-title:#484848;
+
+    --light-text: #d2d2d2;
+    /*淺灰色 */
+}
+input{
+    outline: none;
+    border: none;
+}
+::placeholder { /* CSS 3 標準 */
+    color: var(--light-text);
+    letter-spacing:2px;
+}
+.bigbanner_title{
+    color: var(--bigbanner-title);
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgb(0 0 0 / 50%);
+    /* white-space: nowrap; */
+}
+.bigbanner_h2title{
+    font-size: 16px;
+}
+
+.notlogin_bigbanner_img{
+    background: url("./pic/en_sm.jpg");
+    /* background-image:url("./pic/en.jpg");  */
+    background-size: cover; 
+    height: 300px;
+}
+.search_div{
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+    white-space: nowrap;
+}
+.notlogin_bigbanner{
+    max-width: 1200px;
+    height: 200px;
+}
+.search_model_container{
+    display: none;
+}
+.input_search{
+    font-size: 20px;
+    color: var(--light-text);
+    border: none;
+}
+
+.fa-search{
+    color: var(--light-text);
+}
+
+.dropdown-menu{
+    left: 0;
+    right: 0;
+    width: 50%;
+    
+}
+.search_model_language{
+    text-decoration: none;
+    padding: 5px 0;
+}
+.search_model_language:hover{
+    background-color: rgb(182, 182, 182,0.5);
+}
+.eva_title_all,
+.eva_title_num{
+    font-size: 18px;
+    font-weight: bolder;
+}
+.eva_color{
+    height: 10px;
+    background-color: var(--secondary-color);
+}
+.eva_level,
+.eva_text{
+    font-size: 14px;
+    font-weight: bolder;
+}
+.evaluate_box{
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 16%);
+    padding: 20px;
+    margin: 20px 0;
+}
+.student_pic{
+    border-radius: 100%;
+    overflow: hidden;
+    height: 100px;
+    width: 100px;
+}
+.student_card{
+    font-size: 16px;
+    border-radius: 5px;
+}
+.card_topic_tn>a{
+    color: var(--secondary-color);
+}
+.time,.forwho{
+    font-size: 12px;
+    line-height: 16px;
+}
+.starbox .fa-star{
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+@media screen and (min-width: 768px) {
+    .bigbanner_title{
+        font-size: 30px;
+    }
+    .bigbanner_txt{
+        font-size:20px;
+        color: var(--bigbanner-title);
+        text-shadow: 0 1px 2px rgb(0 0 0 / 50%);
+        white-space: nowrap;
+        /* margin-top: -1.5rem; */
+    }
+    
+    .notlogin_bigbanner{
+        height: 270px;
+    }
+    .howtochose_text {
+        position: absolute;
+        bottom: 30%;
+        left: 5%;
+    }
+    .eva_level{
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .notlogin_bigbanner_img{
+        background-image:
+        url("./pic/en.jpg");
+        background-size: cover;
+        
+        height: 300px;
+    }
+}
