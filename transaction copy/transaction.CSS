@@ -1,0 +1,83 @@
+:root {
+    --primary-color: rgb(255, 95, 95); 
+    --secondary-color: rgb(2, 202, 185); 
+    --secondary-lighter-color: rgba(2, 202, 185, .6); 
+    --secondary-lightest-color: rgba(2, 202, 185, .3); 
+    --dark-text: #767676; 
+    --light-text: #d2d2d2;
+    --bigbanner-title:#484848;
+    --hyperlink-color:rgb(6, 139, 128);
+    --table-border-color:#e0e0e0;
+    --modal-text-color:#606266;
+}
+.btn-close:focus,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus, .btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;
+    box-shadow: none;
+}
+
+a,.btn{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+p{
+    margin: 0;
+}
+a:hover,.btn:hover{
+    color: var(--hyperlink-color);
+}
+input{
+    outline: none;
+    border: none;
+}
+.transaction_title{
+    font-size: 32px;
+    font-weight: 600;
+    color: #363636;
+}
+
+.transaction_date{
+    padding: 0;
+}
+.not_transaction_hidden_div,.transaction_tbody_ul,.transaction_div_thead{
+    border: 1px solid var(--table-border-color);
+    
+}
+.transaction_record_li p,.not_transaction_hidden_div p{
+    font-size: 12px;
+}
+.not_transaction_hidden_div span{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+
+/* modal */
+.transaction_person_div p,.transaction_detail_title p,.transaction_detail_contxt div,.transaction_detail_momey_total p,.transaction_detail_momey_num_sum,.transaction_payment_way p,.transaction_footer{
+    font-size: 12px;
+    color: var(--modal-text-color);
+}
+.transaction_detail_contxt p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.transaction_detail_title p{
+    font-weight: 500;
+}
+.transaction_detail_contxt{
+    border-top: 1px solid var(--table-border-color);
+    border-bottom: 1px solid var(--table-border-color);
+}
+.transaction_detail_momey_total{
+    border-bottom: 1px solid var(--table-border-color);
+}
+.transaction_payment_way_p:before{
+    content:'付款方式';
+}
+.transaction_payment_day:before{
+    content:'付款日期';
+}
