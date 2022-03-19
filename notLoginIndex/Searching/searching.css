@@ -1,0 +1,103 @@
+:root {
+  --primary-color: rgb(255, 95, 95);
+  --secondary-color: rgb(2, 202, 185);
+  --secondary-lighter-color: rgba(2, 202, 185, .6);
+  --secondary-lightest-color: rgba(2, 202, 185, .3);
+  --dark-text: #767676;
+  --light-text: #d2d2d2;
+}
+
+.container-fluid {
+  max-width: 960px;
+}
+
+.searching {
+  max-width: 75%;
+}
+
+@media screen and (max-width: 768px) {
+  .searching_title {
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .searching_title {
+    font-size: 30px;
+    font-weight: 400;
+  }
+}
+
+.searching_card {
+  margin-top: 30px;
+}
+
+.searching_card_pic img {
+  width: 66px;
+  height: 66px;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+
+.searching_card_content {
+  border-left: 2px solid var(--primary-color);
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .searching_card_content span {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .searching_card_content span {
+    font-size: 22px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .searching_card_content p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #767676;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .searching_card_content p {
+    font-size: 17px;
+    font-weight: 300;
+    color: #767676;
+  }
+}
+
+/* .searching_card_content span {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.searching_card_content p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #767676;
+} */
+
+.searching_button {
+  font-size: 24px;
+  font-weight: 300;
+  background-color: #02cab9;
+  color: white;
+  border-radius: 3px;
+  box-shadow: none;
+  border: 1px solid #dbdbdb;
+  padding: calc(0.375em - 1px) 0.75em;
+  margin-top: 65px;
+}
+
+.searching_button:hover {
+  background-color: #0cbdae;
+}

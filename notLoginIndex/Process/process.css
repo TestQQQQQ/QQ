@@ -1,0 +1,71 @@
+:root {
+    --primary-color: rgb(255, 95, 95);
+    --primary-light-color: rgba(255, 95, 95,.1);
+    --secondary-color: rgb(2, 202, 185);
+    --secondary-lighter-color: rgba(2, 202, 185, .6);
+    --secondary-lightest-color: rgba(2, 202, 185, .3);
+    --dark-text: #767676;
+    --black-text: #363636;;
+    --light-text: #d2d2d2;
+}
+
+.process_card_photo{
+    width: 80px;
+    height: 80px;
+}
+.process_area_passrate{
+    font-size: 14px;
+}
+.process_area_teacher{
+    font-size: 24px;
+}
+.process_card_p{
+    font-size: 14px;
+}
+.seperate_i{
+    width: 5px;
+    margin: 0px 10px;
+}
+.process_card{
+    border: solid 1px var(--light-text);
+    width: 55%;
+    margin: 10px auto;
+    transition: 0.4s;
+}
+.process_card:hover{
+    box-shadow: 2px 2px 10px var(--dark-text);
+}
+
+.process_area_cards{
+    flex-wrap: wrap;
+}
+.process_card_h3{
+    position: relative;
+    padding: 10px 0px;
+}
+.process_card_h3:after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 34%;
+    height: 1px;
+    right: 50%;
+    bottom: 3%;
+    transform: translateX(50%);
+    background-color: var(--primary-color);
+}
+.seperate_i{
+    display: none;
+    font-size: 12px;
+}
+@media screen and (min-width:768px){
+    .process_area_cards{
+        flex-wrap: nowrap;
+    }
+    .seperate_i{
+        display: block;
+    }
+    .process_card_h3:after{
+        width: 38%;
+    }
+}

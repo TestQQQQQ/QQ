@@ -1,0 +1,214 @@
+:root {
+    --primary-color: rgb(255, 95, 95); 
+    --secondary-color: rgb(2, 202, 185); 
+    --secondary-lighter-color: rgba(2, 202, 185, .6); 
+    --secondary-lightest-color: rgba(2, 202, 185, .3); 
+    --dark-text: #767676; 
+    --light-text: #d2d2d2;
+    --bigbanner-title:#484848;
+
+    --light-text: #d2d2d2;
+    /*淺灰色 */
+}
+input{
+    outline: none;
+    border: none;
+}
+::placeholder { /* CSS 3 標準 */
+    color: var(--light-text);
+    letter-spacing:2px;
+}
+.bigbanner_title{
+    color: var(--bigbanner-title);
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgb(0 0 0 / 50%);
+    white-space: nowrap;
+}
+
+.notlogin_bigbanner_img{
+    background-image:
+    url("https://res.cloudinary.com/amazingtalker/image/upload/c_fill,f_auto,q_auto:best/pages/home/page-hero/guest-tw-t.jpg");
+    background-size: cover;
+    
+    /* min-height: 50vh;
+    height: 80vh;  */
+}
+.search_div{
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+    white-space: nowrap;
+}
+.notlogin_bigbanner{
+    max-width: 1200px;
+    height: 212px;
+}
+.input_search{
+    font-size: 20px;
+    color: var(--light-text);
+    border: none;
+}
+.fa-search{
+    color: var(--light-text);
+}
+
+/* goodteacher (Joanna) */
+.mv{
+            
+    aspect-ratio: 560/315;
+    /* 長寬比 */
+}
+.mv iframe{
+    vertical-align: top;
+    height: 100%;
+    width: 100%;
+    /* 影片的長寬高由"長寬比的屬性"來設定 */
+}
+.goodtacher_card{
+    margin: 10px 0;
+}
+.goodteacher_inside{
+    /* border: 1px solid gray; */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px  var(--light-text);
+}
+.goodteacher_inside:hover{
+    box-shadow: 3px 3px 3px  var(--dark-text);
+}
+
+.goodtacher_text span:nth-of-type(1){
+    font-size: 3vmin;
+    font-weight: bold;
+    margin-bottom: 0px;
+    display: block;
+}
+.goodtacher_text span:nth-of-type(2){
+    color: var(--secondary-color);
+    font-size: 1vmin;
+    margin: 0;
+}
+.goodtacher_shiled_div{
+    background-color: var(--dark-text);
+    height: 2px;
+    position: relative;
+    margin: 50px 0;
+}
+.goodtacher_shiled img{
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/* choose teacher(Joanna) */
+.howtochose_row {
+    position: relative;
+}
+.howtochose_text h2 {
+    font-size: 7vmin;
+    color: gray;
+    font-weight: bold;
+}
+
+.howtochose_text h3 {
+    font-size: 3vmin;
+    color: gray;
+}
+
+.howtochose_text button {
+    background: var(--primary-color);
+    color: white;
+}
+.howtochose_text button:hover{
+    color: white;
+    background: rgb(241, 54, 54);
+}
+.howtochose_pic_sm{
+    display: none;
+}
+
+/* beteacher */
+.beteacher_left{
+            padding: 30px;
+        }
+        .beteacher_left_text h3{
+            font-size: 5vmin;
+            font-weight: bolder;
+        }
+        .beteacher_left_text h4{
+            font-size: 3vmin;
+        }
+        .beteacher_left_list ul{
+            padding: 0;
+            font-size: 3vmin;
+            font-weight: bold;
+        }
+        .beteacher_btn{
+            color: var(--primary-color);
+            border:  2px solid var(--primary-color);
+            width: 25vmin;
+        }
+        .beteacher_btn:hover{
+            color: white;
+            background: var(--primary-color);
+            border:  2px double white;
+            box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.2);
+        }
+
+
+@media screen and (max-width:767px) {
+    .howtochose_text {
+        position: absolute;
+        bottom: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .howtochose_pic_sm{
+        display: block;
+    }
+    .howtochose_pic_bg{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .bigbanner_title{
+        font-size: 50px;
+    }
+    .bigbanner_txt{
+        font-size:24px;
+        color: var(--bigbanner-title);
+        text-shadow: 0 1px 2px rgb(0 0 0 / 50%);
+        white-space: nowrap;
+        margin-top: -1.5rem;
+    }
+    
+    .notlogin_bigbanner{
+        height: 270px;
+    }
+    .howtochose_text {
+        position: absolute;
+        bottom: 30%;
+        left: 5%;
+    }
+    
+}
+@media screen and(min-width:960px){
+    
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+@media screen and (min-width: 1200px) {
+    .notlogin_bigbanner_img{
+        background-image:
+        url("/notLoginIndex/pic/notloginbigbanner_1024px.jpg");
+        background-size: cover;
+        
+        height: 520px;
+    }
+}

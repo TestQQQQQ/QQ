@@ -1,0 +1,107 @@
+:root {
+    --primary-color: rgb(255, 95, 95); 
+    --secondary-color: rgb(2, 202, 185);
+    --secondary-lighter-color: rgba(2, 202, 185, .6);
+    --secondary-lightest-color: rgba(2, 202, 185, .3);
+    --dark-text: #767676; 
+    --light-text: #d2d2d2;
+}
+body{
+    font-family: "Helvetica Neue","Helvetica","Arial","PingFang HK",".PingFang-SC-Regular","PingFang","Hiragino Sans GB","STHeiti","Microsoft JhengHei",sans-serif;
+}
+.sr_only {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+}
+h1{
+    width: 60px;
+}
+.header_logo{
+    width: 50%;
+}
+.header_logo img{
+    vertical-align: baseline;
+}
+.at_navbar_recommendation{
+    margin-right: auto;
+}
+.at_navbar_item{
+    text-shadow: 0 2px 4px rgb(0 0 0 / 50%);
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+}
+.at_navbar_item a{
+    text-decoration: none;
+    font-weight: 400;
+    color: white;
+}
+.is_hidden_desktop{
+    display: none;
+    font-size: 22px;
+}
+.is_hidden_touch{
+    display: block;
+}
+.is_hidden_touch a{
+    display: block;
+}
+
+
+footer{
+    border-top: 1px solid #d2d2d2;
+    padding: 48px 24px;
+}
+.webmap_list_body{
+    padding: 0;
+}
+footer h4{
+    font-size: 14px;
+}
+.webmap_list_item a{
+    font-weight: 100;
+    font-size: 14px;
+    text-decoration:none;
+    color: #767676;
+}
+.pc_footer_etc{
+    min-height: 130px;
+    padding-top: 20px;
+    display: flex;
+    font-size: 14px;
+    border-top: 1px solid #d2d2d2;
+    
+    margin: auto;
+}
+.PC_footer{
+    width: 70%;
+    margin: auto;
+}
+.terms a{
+    
+    text-decoration:none;
+    color: #767676;
+}
+
+.pad_footer{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 767px){
+    .is_hidden_touch{
+        display: none;
+    }
+    .is_hidden_desktop{
+        display: flex;
+    }
+    .PC_footer{
+        display: none;
+    }
+    .pad_footer{
+        display: block;
+    }
+}

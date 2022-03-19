@@ -1,0 +1,165 @@
+:root {
+    --primary-color: rgb(255, 95, 95); 
+    --secondary-color: rgb(2, 202, 185);
+    --secondary-lighter-color: rgba(2, 202, 185, .6);
+    --secondary-lightest-color: rgba(2, 202, 185, .3);
+    --dark-text: #767676; 
+    --light-text: #d2d2d2;
+}
+body{
+    font-family: "Helvetica Neue","Helvetica","Arial","PingFang HK",".PingFang-SC-Regular","PingFang","Hiragino Sans GB","STHeiti","Microsoft JhengHei",sans-serif;
+}
+.sr_only {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+}
+.navbar-expand-lg{
+    background-color: rgb(255, 255, 255,.9);
+}
+h1{
+    width: 60px;
+}
+.header_logo{
+    width: 50%;
+}
+.header_logo img{
+    vertical-align: baseline;
+}
+.at_navbar_recommendation{
+    margin-right: auto;
+}
+.at_navbar_item{
+    font-weight: 400;
+    cursor: pointer;
+}
+.at_navbar_item a{
+    text-decoration: none;
+    font-weight: 400;
+    color: white;
+}
+.is_hidden_desktop{
+    display: flex;
+}
+.is_hidden_touch{
+    display: none;
+}
+
+.at_navbar_item_badge{
+    background-color: var(--primary-color);
+    font-size: 9px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+}
+
+footer{
+    border-top: 1px solid #d2d2d2;
+    padding: 48px 24px;
+}
+.webmap_list_body{
+    padding: 0;
+}
+footer h4{
+    font-size: 14px;
+}
+.webmap_list_item a{
+    font-weight: 100;
+    font-size: 14px;
+    text-decoration:none;
+    color: #767676;
+}
+.pc_footer_etc{
+    min-height: 130px;
+    padding-top: 20px;
+    display: flex;
+    font-size: 14px;
+    border-top: 1px solid #d2d2d2;
+    
+    margin: auto;
+}
+.PC_footer{
+    display: none;
+}
+.terms a{
+    
+    text-decoration:none;
+    color: #767676;
+}
+
+.pad_footer{
+    display: block;
+}
+
+.search_area{
+    margin-right: auto;
+    width: 200px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+
+.input_search {
+    font-size: 12px;
+    width: 95%;
+    border: none;
+}
+.fa-search {
+    color: var(--light-text);
+}
+input{
+    border: none;
+    outline: none;
+}
+::placeholder { /* CSS 3 標準 */
+    color: var(--light-text);
+    letter-spacing:3px;
+}
+.at_message{
+    position: relative;
+}
+.at_navbar_item_badge{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 28px;
+    right: 0;
+    top: 12px;
+    bottom: 0;
+}
+.circle_img{
+    width: 28px;
+    height: 28px;
+}
+.login_person_img{
+    border-radius: 50%;
+    width: 100%;
+}
+@media screen and (min-width: 768px){
+    
+    .is_hidden_touch{
+        display: block;
+    }
+    .is_hidden_touch a{
+        display: block;
+    }
+    .is_hidden_desktop{
+        display: none;
+        font-size: 22px;
+    }
+    .PC_footer{
+        display: block;
+        width: 70%;
+        margin: auto;
+    }
+    .pad_footer{
+        display: none;
+    }
+    .search_area {
+        
+        width: 375px;
+        
+    }
+    
+}
