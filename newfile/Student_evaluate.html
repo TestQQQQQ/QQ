@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="/notLoginIndex/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="notloginpage.css">
+    <link rel="stylesheet" href="./Layout_NotLogged/layout.css">
+
+    <link rel="stylesheet" href="./se.css">
+
+</head>
+
+<body>
+    <div class="notlogin_bigbanner_img">
+
+        <div class="container pt-5">
+
+            <!-- bigbanner-->
+            <section class="notlogin_bigbanner ">
+                <div class="row flex-column py-4 ">
+                    <div class="col-12">
+                        <h2
+                            class="m-0 my-2 py-1 border-bottom d-inline-block border-dark border-2   bigbanner_h2title ">
+                            學生評價</h2>
+                        <p class="pb-0 mb-0 bigbanner_title">AmazingTalker 評價心得{{日文}}用戶學習評比</p>
+                        <!-- 下面的P只有大的才有 -->
+                        <p class="d-none d-md-block my-2 bigbanner_txt">{{155984}} 筆{{日文}}學習心得評價評比</p>
+                        <div class=" mt-3 d-flex justify-content-between m-auto p-3 search_div w-100">
+                            <input type="text" placeholder="{{英文}}" class=" w-100 input_search"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <!-- searcg_model section -->
+                            <div class="dropdown-menu mt-3">
+                                <div class="row search_model_row p-4 d-flex w-100">
+                                    <div class="col-12 d-flex flex-column px-0 search_model_language_box">
+                                        <p class="search_model_title">語言學習</p>
+                                        <a href="" class="search_model_language">{英文}</a>
+                                        <a href="" class="search_model_language">{日文}</a>
+                                        <a href="" class="search_model_language">{韓文}</a>
+                                        <a href="" class="search_model_language">{法文}</a>
+                                        <a href="" class="search_model_language">{德文}</a>
+                                        <a href="" class="search_model_language">{中文}</a>
+                                        <a href="" class="search_model_language">{越南文}</a>
+                                        <a href="" class="search_model_language">{西班牙文}</a>
+                                        <a href="" class="search_model_language">{印尼語}</a>
+                                        <a href="" class="search_model_language">{俄文}</a>
+                                        <a href="" class="search_model_language">{粵語}</a>
+                                        <a href="" class="search_model_language">{泰語}</a>
+                                        <a href="" class="search_model_language">{拉丁文}</a>
+                                        <a href="" class="search_model_language">{閩南語}</a>
+                                        <a href="" class="search_model_language">{義大利文}</a>
+                                        <a href="" class="search_model_language">{匈牙利文}</a>
+                                        <a href="" class="search_model_language">{荷蘭文}</a>
+                                        <a href="" class="search_model_language">{葡萄牙語}</a>
+                                        <a href="" class="search_model_language">{北京話}</a>
+                                        <a href="" class="search_model_language">{阿拉伯文}</a>
+                                        <a href="" class="search_model_language">{瑞典文}</a>
+                                        <a href="" class="search_model_language">{他家祿語}</a>
+                                        <a href="" class="search_model_language">{芬蘭文}</a>
+                                        <a href="" class="search_model_language">{土耳其語}</a>
+                                        <a href="" class="search_model_language">{客家話}</a>
+                                        <a href="" class="search_model_language">{緬甸語}</a>
+                                        <a href="" class="search_model_language">{希伯來文}</a>
+                                        <a href="" class="search_model_language">{馬來語}</a>
+                                        <a href="" class="search_model_language">{塞爾維亞文}</a>
+                                        <a href="" class="search_model_language">{波瀾文}</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- evaluate -->
+        <section class="evaluate_box">
+            <div class="row">
+                <div class="col-6">
+                    <div class="py-2 d-flex align-items-center eva_title">
+                        <h3 class="mb-0 eva_title_all">總共評價</h3>
+                        <span class="eva_title_num">{{155984}}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="star_rows border-top border-2">
+                <div class="row my-2">
+                    <div class="col-2 col-md-3 d-flex align-items-center">
+                        <div class="eva_level">
+                            <div class="d-flex align-items-center text">
+                                <i class="fas fa-star"> 5</i>
+                                <span class="d-none d-md-block"> ． 非常好</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 col-md-8 h-100 eva_box ">
+                        <div class="row d-flex align-content-center py-2">
+                            <div class="col-2 eva_color"></div>
+                            <div class="col-2 eva_color"></div>
+                            <div class="col-2 eva_color"></div>
+                            <div class="col-2 eva_color"></div>
+                            <div class="col-2 eva_color"></div>
+                            <div class="col-2 eva_color"></div>
+                        </div>
+                    </div>
+                    <div class="col-2 col-md-1 ps-0 d-flex align-items-center justify-content-end">
+                        <div class="d-flex align-content-center  eva_text">
+                            <span>99.3%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-2">
+                    <div class="col-2 col-md-3 d-flex align-items-center">
+                        <div class="eva_level">
+                            <div class="d-flex align-items-center text">
+                                <i class="fas fa-star"> 4</i>
+                                <span class="d-none d-md-block"> ． 非常好</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 col-md-8 h-100 eva_box ">
+                        <div class="row d-flex align-content-center py-2">
+                            <div class="col-2 eva_color"></div>
+                            <div class="col-2 eva_color"></div>
+                            <div class="col-2 eva_color"></div>
+                            <div class="col-2 eva_color"></div>
+                            <div class="col-2 eva_color"></div>
+                            <div class="col-2 eva_color"></div>
+                        </div>
+                    </div>
+                    <div class="col-2 col-md-1 ps-0 d-flex align-items-center justify-content-end">
+                        <div class="d-flex align-content-center  eva_text">
+                            <span>99.3%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-2">
+                    <div class="col-2 col-md-3 d-flex align-items-center">
+                        <div class="eva_level">
+                            <div class="d-flex align-items-center text">
+                                <i class="fas fa-star"> 3</i>
+                                <span class="d-none d-md-block"> ． 非常好</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 col-md-8 h-100 eva_box ">
+                        <div class="row d-flex align-content-center py-2">
+                            <div class="col-2 eva_color"></div>
+                            <div class="col-2 eva_color"></div>
+                            <div class="col-2 eva_color"></div>
+                            <div class="col-2 eva_color"></div>
+                            <div class="col-2 eva_color"></div>
+                            <div class="col-2 eva_color"></div>
+                        </div>
+                    </div>
+                    <div class="col-2 col-md-1 ps-0 d-flex align-items-center justify-content-end">
+                        <div class="d-flex align-content-center  eva_text">
+                            <span>99.3%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-2">
+                    <div class="col-2 col-md-3 d-flex align-items-center">
+                        <div class="eva_level">
+                            <div class="d-flex align-items-center text">
+                                <i class="fas fa-star"> 2</i>
+                                <span class="d-none d-md-block"> ． 非常好</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 col-md-8 h-100 eva_box ">
+                        <div class="row d-flex align-content-center py-2">
+                            <div class="col-2 eva_color"></div>
+                            <div class="col-2 eva_color"></div>
+                            <div class="col-2 eva_color"></div>
+                            <div class="col-2 eva_color"></div>
+                            <div class="col-2 eva_color"></div>
+                            <div class="col-2 eva_color"></div>
+                        </div>
+                    </div>
+                    <div class="col-2 col-md-1 ps-0 d-flex align-items-center justify-content-end">
+                        <div class="d-flex align-content-center  eva_text">
+                            <span>99.3%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-2">
+                    <div class="col-2 col-md-3 d-flex align-items-center">
+                        <div class="eva_level">
+                            <div class="d-flex align-items-center text">
+                                <i class="fas fa-star"> 1</i>
+                                <span class="d-none d-md-block"> ． 非常好</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 col-md-8 h-100 eva_box ">
+                        <div class="row d-flex align-content-center py-2">
+                            <div class="col-2 eva_color"></div>
+                            <div class="col-2 eva_color"></div>
+                            <div class="col-2 eva_color"></div>
+                            <div class="col-2 eva_color"></div>
+                            <div class="col-2 eva_color"></div>
+                            <div class="col-2 eva_color"></div>
+                        </div>
+                    </div>
+                    <div class="col-2 col-md-1 ps-0 d-flex align-items-center justify-content-end">
+                        <div class="d-flex align-content-center  eva_text">
+                            <span>99.3%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- student_card -->
+        <section>
+            <div class="border border-2 p-2 my-3 student_card">
+                <div class="d-flex">
+                    <div class="d-flex align-items-center">
+                        <div class="student_pic ">
+                            <img class="img-fluid" src="https://picsum.photos/100/100/?random=10">
+                        </div>
+                    </div>
+                    <div class="ms-3 d-flex flex-column justify-content-around">
+                        <div class="card_topic">
+                            <span>{{Sorali Elaine}}</span>
+                            <h5 class="m-0 card_topic_tn">給 <a href="#" class="text-decoration-none">{{Yabi🌸專業生活日語｜發音校正｜基礎專家💗}}</a></h5>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row starandtime ">
+                            <div class="starbox ">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="time">
+                                {{2022/03/13 01:42}}
+                            </div>
+                            <span class="d-none d-md-block forwho">
+                                總計給 Yabi🌸專業生活日語｜發音校正｜基礎專家💗 的 6 筆評價
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top border-2 mt-3 pt-3 text_box">
+                    <p>剛學完動詞變化一上課直接來14句中翻日轟炸，每一個例句用的單字都不一樣，在翻的時候很常遇到不會的單字，就要必須一直忍受自己很無知的羞恥感，從這裡可以觀察得出來老師很用心的在折磨學生，一點也不給偷吃步的機會😂😂，就是要學生紮紮實實的學好日文。雖然我已經學了三堂課的助詞，還是搞不太懂を的用法，老師就造了個簡單的例句：娘を食べます跟娘は食べます，一個助詞的差別，翻譯上就是天壤之別，一個是把女兒吃了，另一個是女兒在吃飯，就能很直接的理解助詞的重要，不過老師沒有出把萊納吃了的例句，害我有點小失望，有違老師的人設，希望老師下次可以更宅一點🤣🤣</p>
+                </div>
+            </div>
+            
+
+        </section>
+    </div>
+
+
+
+    <!-- <footer class="container mt-3">
+        <div class="PC_footer">
+            <div class="row mb-5">
+                <div class="col webmap_list">
+                    <h4 class="footertitle mb-2">AmazingTalker</h4>
+                    <ul class="webmap_list_body">
+                        <li class="webmap_list_item mb-2 ms-1"><a href="#">關於我們</a></li>
+                        <li class="webmap_list_item mb-2 ms-1"><a href="#">部落格</a></li>
+                    </ul>
+                </div>
+                <div class="col webmap_list">
+                    <h4 class="footertitle mb-2">工作機會</h4>
+                    <ul class="webmap_list_body">
+                        <li class="webmap_list_item mb-2 ms-1"><a href="#">加入 AmazingTalker</a></li>
+                        <li class="webmap_list_item mb-2 ms-1"><a href="#">找學生</a></li>
+                        <li class="webmap_list_item mb-2 ms-1"><a href="#">成為教師</a></li>
+                        <li class="webmap_list_item mb-2 ms-1"><a href="#">家教費用資訊</a></li>
+                    </ul>
+                </div>
+                <div class="col webmap_list">
+                    <h4 class="footertitle mb-2">用戶回饋</h4>
+                    <ul class="webmap_list_body">
+                        <li class="webmap_list_item mb-2 ms-1"><a href="#">教師收入與教學心得</a></li>
+                        <li class="webmap_list_item mb-2 ms-1"><a href="#">學生上課評價分享</a></li>
+                    </ul>
+                </div>
+                <div class="col webmap_list">
+                    <h4 class="footertitle mb-2">熱門頁面</h4>
+                    <ul class="webmap_list_body">
+                        <li class="webmap_list_item mb-2 ms-1"><a href="#">英文家教課程</a></li>
+                        <li class="webmap_list_item mb-2 ms-1"><a href="#">日文家教課程</a></li>
+                        <li class="webmap_list_item mb-2 ms-1"><a href="#">韓文家教課程</a></li>
+                        <li class="webmap_list_item mb-2 ms-1"><a href="#">法文家教課程</a></li>
+                        <li class="webmap_list_item mb-2 ms-1"><a href="#">西班牙文家教課程</a></li>
+                        <li class="webmap_list_item mb-2 ms-1"><a href="#">中文家教課程</a></li>
+                        <li class="webmap_list_item mb-2 ms-1"><a href="#">其他家教課程</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pc_footer_etc justify-content-between">
+                <div class="year">
+                    <p>© 2022 AmazingTalker Limited.</p>
+                </div>
+                <div class="terms d-flex">
+                    <a href="#">服務條款隱私聲明</a>
+                </div>
+            </div>
+        </div>
+        <div class="pad_footer">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            AmazingTalker
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul class="webmap_list_body">
+                                <li class="webmap_list_item mb-2 ms-1"><a href="#">關於我們</a></li>
+                                <li class="webmap_list_item mb-2 ms-1"><a href="#">部落格</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            工作機會
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul class="webmap_list_body">
+                                <li class="webmap_list_item mb-2 ms-1"><a href="#">加入 AmazingTalker</a></li>
+                                <li class="webmap_list_item mb-2 ms-1"><a href="#">找學生</a></li>
+                                <li class="webmap_list_item mb-2 ms-1"><a href="#">成為教師</a></li>
+                                <li class="webmap_list_item mb-2 ms-1"><a href="#">家教費用資訊</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            用戶回饋
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul class="webmap_list_body">
+                                <li class="webmap_list_item mb-2 ms-1"><a href="#">教師收入與教學心得</a></li>
+                                <li class="webmap_list_item mb-2 ms-1"><a href="#">學生上課評價分享</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            熱門頁面
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul class="webmap_list_body">
+                                <li class="webmap_list_item mb-2 ms-1"><a href="#">英文家教課程</a></li>
+                                <li class="webmap_list_item mb-2 ms-1"><a href="#">日文家教課程</a></li>
+                                <li class="webmap_list_item mb-2 ms-1"><a href="#">韓文家教課程</a></li>
+                                <li class="webmap_list_item mb-2 ms-1"><a href="#">法文家教課程</a></li>
+                                <li class="webmap_list_item mb-2 ms-1"><a href="#">西班牙文家教課程</a></li>
+                                <li class="webmap_list_item mb-2 ms-1"><a href="#">中文家教課程</a></li>
+                                <li class="webmap_list_item mb-2 ms-1"><a href="#">其他家教課程</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pc_footer_etc justify-content-between">
+                <div class="terms d-flex">
+                    <a href="#">服務條款隱私聲明</a>
+                </div>
+                <div class="year">
+                    <p>© 2022 AmazingTalker Limited.</p>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
