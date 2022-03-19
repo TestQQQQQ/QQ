@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .header{
+            background-color: #ccc;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+        }
+        
+        .nav a{
+            display: block;
+            text-decoration: none;    
+            padding: 6px 15px;
+        }
+        
+        @media screen and (max-width:767px){
+            .nav{
+                position: fixed;
+                width: 300px;
+                height: calc(100% - 60px);
+                background-color: #fa0;
+                top: 60px;
+                left: -100px;
+                opacity: 0;
+                transition: 1s;
+                /* display: none; */
+            }
+            #menu-control:checked ~.header .nav{
+                /* display: block; */
+                left:0px;
+                opacity: 1;
+            }
+            .nav a{
+                color:darkred;
+            }
+            .nav a +a{
+                border-top: 1px solid darkred;
+            }
+            .hb{
+                --bar-color:darkred;
+                width: 40px;
+                height: 40px;
+                background-color: #aaa;
+                position: relative;
+            }
+            .hb span{
+                position: absolute;
+                width: 80%;
+                height: 4px;
+                background-color:var(--bar-color);
+                top:0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+            .hb span:first-child{
+                margin-top: 10px;
+            }
+            .hb span:last-child{
+                margin-bottom: 10px;
+            }
+            #menu-control:checked~.header .hb span:first-child{
+                margin: auto;
+                transform: rotate(45deg);
+            }
+            #menu-control:checked~.header .hb span:nth-child(2){
+                display: none;
+            }
+            #menu-control:checked~.header .hb span:last-child{
+                margin: auto;
+                transform: rotate(-45deg);
+            }
+            
+            #menu-control{
+                position: absolute;
+                /* z-index: -1; */
+                /* 也可以寫下面的方式 */
+                top: -20px;
+            }
+            
+        }
+        @media screen and (min-width:768px){
+            .nav{
+                display: flex;
+            }
+            .nav a{
+                color: #333;
+            }
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" name="" id="menu-control">
+    <div class="header">
+        <a href="#">logo</a>
+        <label for="menu-control" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="nav">
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </div>
+</body>
+</html>

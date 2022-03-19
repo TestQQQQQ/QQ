@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+        }
+        /* 767px以內都會套用:如果只要手機有的話 */
+        @media screen and (max-width:767px) {
+            .box{
+                background-color: #f00;
+            }
+        }
+        @media screen and (min-width:768px) {
+            .box{
+                background-color: #00f;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

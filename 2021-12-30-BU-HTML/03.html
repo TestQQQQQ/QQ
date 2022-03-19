@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .header{
+            background-color: #ccc;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+        }
+        
+        .nav a{
+            display: block;
+            text-decoration: none;    
+            padding: 6px 15px;
+        }
+        
+        @media screen and (max-width:767px){
+            .nav{
+                position: fixed;
+                width: 300px;
+                height: calc(100% - 60px);
+                background-color: #fa0;
+                top: 60px;
+                left: 0;
+            }
+            .nav a{
+                color:darkred;
+            }
+            .nav a +a{
+                border-top: 1px solid darkred;
+            }
+            .hb{
+                width: 40px;
+                height: 40px;
+                background-color: #aaa;
+            }
+        }
+        @media screen and (min-width:768px){
+            .nav{
+                display: flex;
+            }
+            .nav a{
+                color: #333;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#" class="logo">
+            <h1>logo</h1>
+        </a>
+        <div class="hb"></div>
+        <nav class="nav">
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+
+    </div>
+</body>
+</html>
