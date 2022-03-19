@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./transaction.CSS">
+</head>
+
+<body>
+    <div class="container my-4">
+        <section class="transaction_div">
+            <div class="row">
+                <div class="mb-3 col-12">
+                    <p class="transaction_title">交易紀錄</p>
+                </div>
+                <div class="col-12 d-flex align-items-center">
+                    <div class="me-2">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <p>已購買課程將無法退回現金，僅能退至AmazingTalker作為消費幣使用，若因為教師或學生個人因素導致無法繼續上課，請點此 <a href="">『申請課程退AT幣』</a></p>
+                </div>
+                <div class="col-12 p-3">
+                    <div class="row p-2">
+                        <div class="col-12 ms-0 d-none d-md-block transaction_div_thead">
+                            <div class="row px-3 py-3">
+                                <p class="col-2 fw-bolder">時間</p>
+                                <p class="col-8 fw-bolder">摘要</p>
+                                <p class="col-2 fw-bolder ">備註</p>
+                            </div>
+                        </div>
+                        <ul class="col-12 ms-0 transaction_tbody_ul">
+                            <li class="row p-3 transaction_record_li">
+                                <p class="col-12 col-md-2 transaction_date">{2022/02/25}</p>
+                                <p class="col-6 col-md-8">{購買課程}</p>
+                                <p class="col-6 col-md-2 text-end text-md-start transaction_
+                                receipt_hyperlink"><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">{收據明細}</button></p>
+                            </li>
+                        </ul>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade transaction_model" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Best Study</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body p-3">
+                                        <div class="row pb-5 transaction_person_div">
+                                            <p class="col-12 pb-2">
+                                                付款人
+                                            </p>
+                                            <p class="col-12 pb-2 transaction_model_buyer">{Bucky Barnes}</p>
+                                            <p class="col-12">交易ID</p>
+                                            <p class="col-12 pb-2 transaction_model_buyer_id">{1133753PR2111119]</p>
+                                        </div>
+                                        <div class="row transaction_detail_title">
+                                            <p class="col-12">明細</p>
+                                        </div>
+                                        <div class="row p-3 transaction_detail_contxt">
+                                            <div class="col-9 transaction_model_classname">Hope🍭專攻口說🏆一堂課開口說生活會話課🏆商用會議🌸兒童自然發音🌎旅居30+國旅行者 - 1堂試上課：英文</div>
+                                            <p class="col-3 transaction_detail_momey_num">US$4.40USD</p>
+                                        </div>
+                                        <div class="row p-3 transaction_detail_contxt">
+                                            <div class="col-9 transaction_model_classname">Hope🍭專攻口說🏆一堂課開口說生活會話課🏆商用會議🌸兒童自然發音🌎旅居30+國旅行者 - 1堂試上課：英文</div>
+                                            <p class="col-3 transaction_detail_momey_num">US$4.40USD</p>
+                                        </div>
+                                        <div class="row d-flex justify-content-end">
+                                            <div class="col-6">
+                                                <div class="row p-3 transaction_detail_momey_total">
+                                                    <p class="col-6 ms-0">總金額</p>
+                                                    <p class="col-6 ms-0 transaction_detail_momey_num_sum">US$4.40USD</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row d-flex justify-content-end">
+                                            <div class="col-6 p-3 transaction_payment_way">
+                                                <p class="transaction_payment_way_p">{{超商付款}}</p>
+                                                <p class="transaction_payment_day">{{ 2022/02/25}}</p>
+                                                <p>課程費用已內含稅金、服務費</p>
+                                            </div>
+                                        </div>
+                                        <div class="row d-flex justify-content-center transaction_footer">
+                                            The AmazingTalker Group lnc.<br/>
+                                            24251 新北市新莊區思源路601號16樓
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
